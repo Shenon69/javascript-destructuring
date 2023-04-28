@@ -49,3 +49,17 @@ let { name, breed, favFood = "rice", age: currentAge = 1 } = dog;
 
 console.log(favFood);
 console.log(currentAge);
+
+//  assigni remaining elements to a single variable
+//  we can assing the remaining elements to a variable using `...` (spread syntax)
+
+const cat = {
+  catName: "Garfield",
+  breed: "Persian",
+  age: 1,
+};
+
+let { catName, ...rest } = cat;
+console.log(rest);
+
+//THE REST ELEMENT MUST BE THE LAST ELEMENT
